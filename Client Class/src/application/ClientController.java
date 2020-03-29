@@ -70,7 +70,7 @@ public class ClientController implements Initializable {
 
 	private void sendMessage(String message) {
 		try {
-			output.writeObject("Student 1 - " + message);
+			output.writeObject("Student 2 - " + message);
 			output.flush();
 
 			try {
@@ -81,7 +81,7 @@ public class ClientController implements Initializable {
 				e.printStackTrace();
 			}
 
-			textArea.appendText("\nStudent 1 - " + message);
+			textArea.appendText("\nStudent 2 - " + message);
 		} catch (IOException e) {
 			System.out.println("Error");
 			e.printStackTrace();
