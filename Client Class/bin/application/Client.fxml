@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ClientController">
+   <children>
+      <Pane layoutX="-22.0" layoutY="-6.0" prefHeight="400.0" prefWidth="300.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f15a22" height="442.0" layoutX="20.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="415.0" />
+            <Polygon fill="#0c2340" layoutX="272.0" layoutY="33.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+              <points>
+                <Double fx:value="-50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-60.0" />
+              </points>
+            </Polygon>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0c2340" height="83.0" layoutX="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="250.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f15a22" height="31.0" layoutX="-1.0" layoutY="73.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="396.0" />
+            <Polygon fill="#0c2340" layoutX="82.0" layoutY="379.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <points>
+                  <Double fx:value="-50.0" />
+                  <Double fx:value="40.0" />
+                  <Double fx:value="50.0" />
+                  <Double fx:value="40.0" />
+                  <Double fx:value="0.0" />
+                  <Double fx:value="-60.0" />
+               </points>
+            </Polygon>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0c2340" height="139.0" layoutX="79.0" layoutY="319.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="339.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0c2340" height="200.0" layoutX="2.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="415.0" />
+            <TextArea fx:id="textArea" layoutX="56.0" layoutY="122.0" prefHeight="200.0" prefWidth="240.0" style="-fx-background-color: #f15a22;" wrapText="true" />
+            <TextField fx:id="textField" layoutX="56.0" layoutY="344.0" prefHeight="25.0" prefWidth="182.0" promptText="Write something here!!" />
+            <Button fx:id="buttonSend" layoutX="249.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleButtonSend" prefHeight="25.0" prefWidth="46.0" text="send" />
+            <Label fx:id="status" ellipsisString="" layoutX="60.0" layoutY="97.0" prefHeight="25.0" prefWidth="200.0" />
+            <Button fx:id="buttonConnect" layoutX="234.0" layoutY="85.0" mnemonicParsing="false" onAction="#handleButtonConnect" text="connect" />
+            <Label layoutX="32.0" layoutY="33.0" text="CHATROOM" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="36.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <ImageView fitHeight="64.0" fitWidth="58.0" layoutX="190.0" layoutY="28.0">
+               <image>
+                  <Image url="@../../rowdyHack.png" />
+               </image>
+               <effect>
+                  <Shadow />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="53.0" fitWidth="46.0" layoutX="196.0" layoutY="33.0">
+               <image>
+                  <Image url="@../../rowdyHack.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
