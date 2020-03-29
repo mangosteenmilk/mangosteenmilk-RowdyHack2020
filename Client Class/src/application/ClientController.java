@@ -36,7 +36,7 @@ public class ClientController implements Initializable {
 	private String message = "";
 	private String serverIP;
 	private Socket connection;
-	private int port = 6789;
+	private int port = 2020;
 
 	@FXML
 	public void handleButtonConnect(ActionEvent event) {
@@ -70,7 +70,7 @@ public class ClientController implements Initializable {
 
 	private void sendMessage(String message) {
 		try {
-			output.writeObject("Person 2:" + message);
+			output.writeObject("Student 1 - " + message);
 			output.flush();
 
 			try {
@@ -81,7 +81,7 @@ public class ClientController implements Initializable {
 				e.printStackTrace();
 			}
 
-			textArea.appendText("\nPerson 2:" + message);
+			textArea.appendText("\nStudent 1 - " + message);
 		} catch (IOException e) {
 			System.out.println("Error");
 			e.printStackTrace();
@@ -97,13 +97,11 @@ public class ClientController implements Initializable {
 	@Override
 	public void initialize(URL url, ResourceBundle rb) {
 		serverIP = "192.168.0.20";
-		textArea.setEditable(false);
+		
+		textArea.setEditable(false);						
 		textField.setDisable(true);
 		buttonSend.setDisable(true);
 
-		
-		 buttonConnect.setVisible(false); buttonSend.setVisible(false);
-		 textArea.setVisible(false); textField.setVisible(false);
 		 
 	}
 
